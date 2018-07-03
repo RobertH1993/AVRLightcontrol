@@ -1,6 +1,6 @@
 /**
- * Author: Robert Hendriks (robert.hendriks1993@gmail.com)
- * Description: A device for realtime monitoring of 433Mhz communications.
+ * Author: Robert
+ * Description: A device to control RF wall sockets
  * Date: 29-jun-2018
  */
 
