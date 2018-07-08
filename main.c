@@ -13,6 +13,8 @@ int main(){
 	RFS_init();
 	SP_init();
 
+	UART_sendstring("Init complete\n");
+
 	while(1){
 		SP_check();
 	}
