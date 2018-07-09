@@ -4,9 +4,9 @@
  *  Created on: Jun 30, 2018
  *      Author: robert
  */
-#include "RFSwitch433.h"
 #include <avr/io.h>
 #include <util/delay.h>
+#include "RF433_SF500.h"
 
 //Kudos to the Arduino NewRFSwitch library for the timings and parts of the code
 

@@ -4,9 +4,11 @@
  * Date: 29-jun-2018
  */
 
+#include "RF433_SF500.h"
 #include "UART.h"
-#include "RFSwitch433.h"
 #include "SerialProto.h"
+
+//Test with python: ser.write(b'\x10\x01\xAC\x2C\x00\x01\x00')
 
 int main(){
 	UART_init();

@@ -5,8 +5,8 @@
  *      Author: robert
  */
 
-#ifndef RFSWITCH433_H_
-#define RFSWITCH433_H_
+#ifndef RF433_SF500_H_
+#define RF433_SF500_H_
 #include <stdint.h>
 
 #define PERIOD_US 266
@@ -30,4 +30,4 @@ void RFS_send_unit(uint32_t address, uint8_t unit, uint8_t state);
 
 
 
-#endif /* RFSWITCH433_H_ */
+#endif /* RF433_SF500_H_ */

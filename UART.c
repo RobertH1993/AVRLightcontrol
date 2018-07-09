@@ -12,12 +12,12 @@
 #include <avr/interrupt.h>
 #include <string.h>
 
-volatile struct _RING_BUFFER rx_buff;
+struct _RING_BUFFER rx_buff;
 
 
 void UART_init(){
-	//Clear the receive buffer
-	memset(&rx_buff, 0, sizeof(rx_buff));
+	//Create the receive buffer
+	rx_buff = create_buffer(RX_BUFFER_LENGTH);
 
 	//Enable UART receiver, transmitter and receive interrupt
 	UCSR0B = (1<<RXEN0) | (1<<TXEN0) | (1<<RXCIE0);

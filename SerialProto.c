@@ -7,10 +7,10 @@
 
 #include "SerialProto.h"
 #include "UART.h"
-#include "RFSwitch433.h"
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include <stdio.h>
+#include "RF433_SF500.h"
 
 #define NO_COMMAND 0
 #define RF_SF500_COMMAND 16

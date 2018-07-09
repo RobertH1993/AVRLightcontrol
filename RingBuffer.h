@@ -10,13 +10,23 @@
 
 #include <stdint.h>
 
-#define BUFFER_LENGTH 16
-
 struct _RING_BUFFER{
 	uint8_t start_pointer; //Index pointing to the first element in the buffer
 	uint8_t count; //The number of elements currently in the buffer
-	uint8_t data[BUFFER_LENGTH]; //The actual data inside the buffer
+	uint8_t *data; //The actual data inside the buffer
+	uint8_t size;
 } ring_buffer;
+
+/**
+ * @brief Create a dynamic allocated buffer
+ * @param len The length in bytes of the buffer
+ * @return Returns the freshly created buffer
+ *
+ * @warning Dynamic memory handling on embedded systems is dangerous, only init buffers on startup.
+ * Always check if buffer is valid before using it!
+ */
+struct _RING_BUFFER create_buffer(uint8_t len);
+
 
 /**
  * @brief Add a byte to the ring buffer
