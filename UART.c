@@ -23,8 +23,8 @@ void UART_init(){
 	UCSR0B = (1<<RXEN0) | (1<<TXEN0) | (1<<RXCIE0);
 	//Setup aysnc mode with data size of 8 bits and a stop bit
 	UCSR0C = (1<<USBS0) | (1<<UCSZ01) | (1<<UCSZ00);
-	//Clear the uart status register
-	UCSR0A = 0x00;
+	//Enable double speed
+	UCSR0A = (1<<U2X0);
 
 
 	//Load the baudrate

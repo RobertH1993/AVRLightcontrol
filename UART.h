@@ -1,7 +1,8 @@
 #include <stdint.h>
 
-#define USART_BAUDRATE 9600
-#define BAUD_PRESCALE (((F_CPU / (USART_BAUDRATE * 16UL))) - 1)
+#define USART_BAUDRATE 115200
+//8UL Because of double speed mode U2X
+#define BAUD_PRESCALE (((F_CPU / (USART_BAUDRATE * 8UL))) - 1)
 #define RX_BUFFER_LENGTH 16
 
 

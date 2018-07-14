@@ -8,7 +8,8 @@
 #ifndef RF433_RECEIVE_H_
 #define RF433_RECEIVE_H_
 
-#define PERIOD_US 266
+#define RX_BUFFER_LENGTH 128
+#define PULSE_RESOLUTION 266
 
 /**
  * @brief Init the 433Mhz receiver
